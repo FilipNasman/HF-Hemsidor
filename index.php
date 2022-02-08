@@ -8,8 +8,9 @@
 <body>
     <div class="main"> 
       <div class="header">
-         <div class="image"></div>
+         <img class="logo" url="logo.png"></img>
           </div>
+        <div class="image"></div>
           
       </div>  
     </div>
