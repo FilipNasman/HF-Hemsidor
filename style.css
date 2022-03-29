@@ -5,7 +5,6 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-y: hidden;
 }
 
 .navbar {
@@ -14,6 +13,7 @@ body {
   align-items: center;
   background-color: rgba(19, 19, 26, 0.9);
   color: white;
+  z-index: 1;
 }
 
 .bgimage {
@@ -27,8 +27,13 @@ body {
 
 .companyname {
   background-color: rgba(19, 19, 26, 0.9);
-  height: 30vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 55%;
+  left: 50%;
+  height: 80vh;
   width: 60vw;
+  z-index: -1;
 }
 
 .logo {
@@ -106,4 +111,16 @@ body {
   .navbar-links.active {
     display: flex;
   }
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
 }
