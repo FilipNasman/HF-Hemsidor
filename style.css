@@ -28,17 +28,29 @@ body {
 .companyname {
   background-color: rgba(19, 19, 26, 0.9);
   position: absolute;
-  transform: translate(-50%, -50%);
-  top: 55%;
+  transform: translate(-50%, 0);
+  top: 15%;
   left: 50%;
-  height: 80vh;
+  height: auto;
   width: 60vw;
   z-index: -1;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
 }
 
-.logo {
+.headerlogo {
   font-size: 1.5rem;
   margin: 0.5rem;
+}
+
+.logotype {
+  width: 200px;
+  border-radius: 0.2rem;
+}
+
+h2 {
+  color: white;
 }
 
 .navbar-links ul {
